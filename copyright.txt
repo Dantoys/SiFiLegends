@@ -1,0 +1,24 @@
+Copyright: 2017 Thomas Stephens <dantoys@yahoo.com>
+   aka Dantoys
+License: GPL-2+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ To received a copy of the GNU General Public write to the
+ Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ Images, Names, and any other Reference Belong to the their
+ Respected Owners, and I claim no ownership of the contents.
+ .
+ This Plugin is only for Entertainment Purposes, and is Fan
+ Fiction for Fans, and should never be used for monotary gain.

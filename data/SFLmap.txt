@@ -1,0 +1,91 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+system Danoa
+	pos -239 -321
+	government Republic
+	habitable 1135
+	belt 1689
+	link Sumar
+	link Hassaleh
+	asteroids "small rock" 26 2.425
+	asteroids "medium rock" 274 2.15
+	asteroids "large rock" 40 2.275
+	asteroids "small metal" 11 1.875
+	asteroids "medium metal" 17 2.15
+	asteroids "large metal" 13 1.3
+	minables copper 47 2.85289
+	minables silicon 20 2.3468
+	minables titanium 3 3.894
+	trade Clothing 301
+	trade Electronics 842
+	trade Equipment 714
+	trade Food 598
+	trade "Heavy Metals" 1176
+	trade Industrial 682
+	trade "Luxury Goods" 1179
+	trade Medical 812
+	trade Metal 223
+	trade Plastic 396
+	fleet "Small Northern Merchants" 15000
+	fleet "Small Northern Pirates" 5000
+	fleet "Large Northern Pirates" 16000
+	fleet "Large Republic" 30000
+	fleet "Human Miners" 1600
+	object
+		sprite star/m4
+		period 10
+	object
+		sprite planet/desert7
+		distance 168.64
+		period 75.3935
+	object
+		sprite planet/fog0
+		distance 693.93
+		period 629.313
+		object
+			sprite planet/mercury
+			distance 174
+			period 15.1961
+	object
+		sprite planet/gas6
+		distance 2069.42
+		period 3240.9
+		object
+			sprite planet/lava1
+			distance 293
+			period 11.3672
+		object
+			sprite planet/rock0
+			distance 440
+			period 20.9186
+		object
+			sprite planet/lava2
+			distance 607
+			period 33.895
+		object "Deep Space 6"
+			sprite planet/ds6
+			distance 325
+			period 2
+
+planet "Deep Space 6"
+	attributes deep station
+	landscape land/ds6
+	description `This Strange Station appeared through a wormhole from an unknown region of the universe.`
+	description `	Entire sections of the station are off limits to ordinary visitors. There are many rumors about what those restricted areas contain.`
+	spaceport `The station's visitor center is full of strange shops, and a colorful drinking establishment`
+	spaceport `	From here, passageways lead to many areas that are heavily guarded.`
+	shipyard "SiFi Legends"
+	outfitter "Common Outfits"
+	"required reputation" 100
+	bribe 0.1
+	tribute 1000
+		threshold 8000
+		fleet "Large Republic" 7

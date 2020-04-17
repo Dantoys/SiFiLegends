@@ -1,0 +1,524 @@
+ship "Andromeda"
+	sprite "ship/andromeda"
+	attributes
+		category "Heavy Warship"
+		"cost" 25900000
+		"shields" 80000
+		"hull" 90000
+		ramscoop 2		
+		"required crew" 260
+		"gun ports" 4
+		"automaton" 0
+		"bunks" 710
+		"mass" 820
+		"drag" 17.3
+		"heat dissipation" 0.6
+		"fuel capacity" 1000
+		"cargo space" 400
+		"outfit space" 1400
+		"turret mounts" 8
+		"weapon capacity" 480
+		"engine capacity" 220
+		weapon
+			"blast radius" 380
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Jump Drive"
+		"Large Heat Shunt" 3
+		"Systems Core (Large)" 2
+		"Korath Grab-Strike" 6
+		"Inhibitor Cannon" 4
+		"Point Defense Turret" 2
+		"LP576a Battery Pack"
+		"Forge-Class Thruster"
+		"Smelter-Class Thruster"
+		"Forge-Class Steering"
+		"Smelter-Class Steering"
+		"White Sun Reactor" 2
+
+	engine -1 171.5 1.1
+	engine 95 101 1.1
+	engine -99 100.5 1.1
+	turret 139.5 -122 "Korath Grab-Strike"
+	turret -141 -120.5 "Korath Grab-Strike"
+	turret -141 24.5 "Korath Grab-Strike"
+	turret 141.5 23 "Korath Grab-Strike"
+	turret -61 182.5 "Point Defense Turret"
+	turret 61 182.5 "Point Defense Turret"
+	turret -68.5 215.5 "Korath Grab-Strike"
+	turret 68 215 "Korath Grab-Strike"
+	gun -119.5 -268.5 "Inhibitor Cannon"
+	gun 121.5 -269.5 "Inhibitor Cannon"
+	gun 21.5 -182 "Inhibitor Cannon"
+	gun -23 -184 "Inhibitor Cannon"
+	fighter  -20.5 -119
+	fighter  21.5 -119
+	fighter  -31 -72.5
+	fighter  28 -74.5
+	fighter  -14.5 -39.5
+	fighter  14 -41.5
+	drone -66 -115 left
+	drone -66 -65 left
+	drone -66 -15 left
+	drone -66 35 left
+	drone -66 85 left
+	drone -66 135 left
+	drone 66 -115 right
+	drone 66 -65 right
+	drone 66 -15 right
+	drone 66 35 right
+	drone 66 85 right
+	drone 66 135 right
+	explode "nuke explosion"
+	description `War ship discovered in the Andromada Galaxy with Strange Origins.`
+
+ship "Destiny"
+	sprite "ship/destiny"
+	attributes
+		category "Heavy Warship"
+		"cost" 8900000
+		"shields" 19000
+		"hull" 17000
+		ramscoop 2
+		"required crew" 87
+		"gun ports" 6
+		"automaton" 0
+		"bunks" 310
+		"mass" 760
+		"drag" 16.3
+		"heat dissipation" 0.6
+		"fuel capacity" 1000
+		"cargo space" 300
+		"outfit space" 1100
+		"turret mounts" 8
+		"weapon capacity" 580
+		"engine capacity" 220
+		weapon
+			"blast radius" 350
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Blue Sun Reactor"
+		"Large Heat Shunt" 2
+		Hyperdrive
+		"Jump Drive"
+		"Particle Cannon" 6
+		"Korath Grab-Strike" 6
+		"Systems Core (Medium)"
+		"Pug Akfar Steering"
+		"Pug Akfar Thruster"
+		"Pug Lohmar Thruster"
+		"Pug Lohmar Steering"
+
+	engine 0 276 .4
+	engine -15 274 .4
+	engine -30 272 .4
+	engine -45 270 .4
+	engine -60 268 .4
+	engine -75 266 .4
+	engine 15 274 .4
+	engine 30 272 .4
+	engine 45 270 .4
+	engine 60 268 .4
+	engine 75 266 .4
+	
+	gun -35 -55 "Particle Cannon"
+	gun 35 -55 "Particle Cannon"
+	gun -50 33 "Particle Cannon"
+	gun 50 32 "Particle Cannon"
+	gun -110 122 "Particle Cannon"
+	gun 110 122 "Particle Cannon"
+
+	turret -20 -58 "Korath Grab-Strike"
+	turret 20 -58 "Korath Grab-Strike"
+	turret -40 40 "Korath Grab-Strike"
+	turret 40 40 "Korath Grab-Strike"
+	turret -105 140 "Korath Grab-Strike"
+	turret 105 140 "Korath Grab-Strike"
+	fighter -10 85
+	fighter 10 85
+	explode "nuke explosion"
+	description `Ancient war ship discovered in the Andromada Galaxy with Strange Origins.`
+
+ship "1701"
+	sprite "ship/1701"
+	attributes
+		category "Heavy Warship"
+		"cost" 670000
+		"shields" 10400
+		"hull" 6900
+		
+		"required crew" 290
+		"gun ports" 4
+		"automaton" 0
+		"bunks" 410
+		"mass" 470
+		"drag" 12.
+		"heat dissipation" 0.8
+		"fuel capacity" 800
+		"cargo space" 100
+		"outfit space" 800
+		"turret mounts" 4
+		"weapon capacity" 380
+		"engine capacity" 220
+		weapon
+			"blast radius" 350
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"White Sun Reactor"
+		"Large Heat Shunt" 2
+		"Hyperdrive"
+		"Phaser" 4
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 70
+		"Systems Core (Small)"
+		"LP576a Battery Pack"
+		"Pug Lohmar Thruster"
+		"Pug Lohmar Steering"
+
+	engine -30 -30 .4
+	engine 30 -30 .4
+	engine -36 -35 .4
+	engine 36 -35 .4
+	gun -0.5 -13 "Meteor Missile Launcher"
+	gun -2 -123.5 "Meteor Missile Launcher"
+	turret -2 -108.5 "Phaser"
+	turret 0 -108.5 "Phaser"
+	turret -3.5 -106 "Phaser"
+	turret -0.5 -107 "Phaser"
+
+	explode "nuke explosion"
+	description `Ancient war ship discovered in the Andromada Galaxy with Strange Origins.`
+
+ship "Millennium Falcon"
+	sprite "ship/millenniumfalcon"
+	attributes
+		category "Medium Warship"
+		"cost" 4900000
+		"shields" 7400
+		"hull" 3100
+		"required crew" 4
+		"bunks" 32
+		"mass" 310
+		"drag" 4.9
+		"heat dissipation" .7
+		"fuel capacity" 800
+		"cargo space" 90
+		"outfit space" 490
+		"weapon capacity" 180
+		"engine capacity" 120
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Catalytic Ramscoop"
+		`"Bondir" Atomic Thruster`
+		`"Bondir" Atomic Steering`
+		"Quantum Keystone"
+		"Pulse Cannon" 4
+		"Pulse Turret" 2
+		"Chameleon Anti-Missile"
+		"Hai Corundum Regenerator"
+		"Hai Williwaw Cooling"
+		"Hai Gorge Batteries"
+		"Boulder Reactor"
+		"Liquid Nitrogen Cooler"
+		"Scram Drive"
+
+	engine 0 104 .5
+	engine 28 98 .5
+	engine -28 98 .5
+	gun 31.5 -54 "Pulse Cannon"
+	gun 22.5 -73.5 "Pulse Cannon"
+	gun -26.5 -73.5 "Pulse Cannon"
+	gun -35.5 -53 "Pulse Cannon"
+	turret -1 88 "Pulse Turret"
+	turret 45 20 "Pulse Turret"
+	turret -53.5 20.5 "Chameleon Anti-Missile"
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "The Millennium Falcon is from a Galaxy Far Far Away..."
+
+ship "Sovereign"
+	sprite "ship/sovereign"
+	attributes
+		category "Heavy Warship"
+		"cost" 9600000
+		"shields" 15100
+		"hull" 22200
+		
+		"required crew" 230
+		"gun ports" 2
+		"automaton" 0
+		"bunks" 710
+		"mass" 560
+		"drag" 12.3
+		"heat dissipation" 0.7
+		"fuel capacity" 1000
+		"cargo space" 60
+		"outfit space" 900
+		"turret mounts" 4
+		"weapon capacity" 380
+		"engine capacity" 180
+		weapon
+			"blast radius" 350
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Torpedo Launcher" 2
+		"Torpedo" 60
+		"White Sun Reactor"
+		"Large Heat Shunt" 2
+		"Phaser" 4
+		"Systems Core (Large)"
+		"LP576a Battery Pack"
+		"X4700 Ion Thruster"
+		"X5200 Ion Steering"
+		"Hyperdrive"
+
+	engine -50 -23 .7
+	engine 49.5 -23 .7
+	engine -43.5 -17.5 .7
+	engine 39.5 -15.5 .7
+	turret -1 -139 "Phaser"
+	turret -0.5 -138.5 "Phaser"
+	turret -1.5 -141 "Phaser"
+	turret 0.5 -141 "Phaser"
+	gun 22 -93.5 "Torpedo Launcher"
+	gun -24.5 -96 "Torpedo Launcher"
+	explode "nuke explosion"
+	description `Sovereign Class Star Ship. Curtesy of United Federation of Planets. Copyright Paramount Pictures Corporation `
+
+ship "Bird of Prey"
+	sprite "ship/klingon"
+	attributes
+		category "Medium Warship"
+		cost 12800000
+		"shields" 9200
+		"hull" 5100
+		"required crew" 12
+		"bunks" 22
+		"mass" 333
+		"drag" 4
+		"heat dissipation" 0.5
+		"fuel capacity" 1000
+		"cargo space" 36
+		"outfit space" 647
+		"weapon capacity" 147
+		"engine capacity" 97
+		"shield generation" 2
+		"shield energy" 1.4
+		"hull repair rate" 0.2
+		"hull energy" 0.3
+		"cloak" .05
+		"cloaking energy" 6
+		"cloaking fuel" .3
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"Korath Repeater" 2
+		"Korath Repeater Turret"
+		"Point Defense Turret"
+
+		"Aeon Cell" 2
+		"Crystal Capacitor" 2
+		"Emergency Ramscoop" 2
+		"Quantum Key Stone"
+		"Large Heat Shunt" 2
+		"Cargo Scanner"
+		"Outfit Scanner"
+		"Small Radar Jammer" 3
+		"Thruster (Lunar Class)"
+		"Steering (Planetary Class)"
+		"Scram Drive"
+		
+	engine -16 70 .3
+	engine 16 70 .3
+	engine 20 68 .3
+	engine -20 68 .3
+	engine 24 66 .3
+	engine -24 66 .3
+	engine 28 64 .3
+	engine -28 64 .3
+	engine -28 64 .3
+	gun -74.5 4 "Korath Repeater"
+	gun 74.5 4 "Korath Repeater"
+	turret 0 -53 "Korath Repeater Turret"
+	turret 0 26  "Korath Warder"
+	explode "tiny explosion" 40
+	explode "small explosion" 20
+	explode "medium explosion" 10
+	"final explode" "final explosion small" 1
+	description "K'  what?  This ship came from an Empire that values battle, and while small, will strike fear into any who opposse the Bird of Prey. "
+
+ship "Galactica"
+	sprite "ship/galactica"
+	attributes
+		category "Heavy Warship"
+		"cost" 80000
+		"shields" 57000
+		"hull" 65000
+		"required crew" 290
+		"bunks" 520
+		"automaton" 0
+		"mass" 1550
+		"drag" 17.8
+		"heat dissipation" .5
+		"fuel capacity" 500
+		"cargo space" 187
+		"outfit space" 1054
+		"weapon capacity" 447
+		"engine capacity" 173
+		"ramscoop" 2
+		"shield generation" 3
+		"shield energy" 2
+		weapon
+			"blast radius" 550
+			"shield damage" 7400
+			"hull damage" 4200
+			"hit force" 12600
+	outfits
+		"Javelin Pod" 4
+		"Javelin" 400
+		"Bombardment Turret" 8
+		"Heavy Anti-Missile Turret" 2
+		
+		"Triple Plasma Core"
+		"Plasma Core"
+		"Systems Core (Large)"
+		"Large Heat Shunt" 4
+		"Active Cooling" 2
+		"Jump Drive"
+
+		"Large Thrust Module" 2
+		"Large Steering Module" 2
+		"Small Thrust Module"
+		"Small Steering Module"
+
+	engine -82 446 .8
+	engine 82 446 .8
+	engine -60 447 .8
+	engine 60 447 .8
+	turret -10 -30 "Bombardment Turret"
+	turret 10 -30 "Bombardment Turret"
+	turret -10 -2 "Bombardment Turret"
+	turret 10 -2 "Bombardment Turret"
+	turret -10.5 121 "Bombardment Turret"
+	turret 10 121 "Bombardment Turret"
+	turret -10 148 "Bombardment Turret"
+	turret 10 148 "Bombardment Turret"
+	gun 165 -25 "Javelin Pod"
+	gun 165 75 "Javelin Pod"
+	gun -165 -25 "Javelin Pod"
+	gun -165 75 "Javelin Pod"
+	turret 0 -155 "Heavy Anti-Missile Turret"
+	turret 0 180 "Heavy Anti-Missile Turret"
+
+	explode "tiny explosion" 120
+	explode "small explosion" 60
+	explode "medium explosion" 70
+	explode "large explosion" 50
+	explode "huge explosion" 15
+	"final explode" "final explosion large"
+	description "The largest. ."
+
+ship "O'Neill Class Asgard"
+	sprite "ship/o_neill_class_asgard"
+	attributes
+		category "Heavy Warship"
+		"cost" 29550000
+		"shields" 19000
+		"hull" 9000
+		"required crew" 52
+		"bunks" 170
+		"automaton" 0
+		"mass" 1150
+		"drag" 16.8
+		"heat dissipation" .7
+		"fuel capacity" 600
+		"cargo space" 110
+		"outfit space" 954
+		"weapon capacity" 265
+		"engine capacity" 232
+		"ramscoop" 1
+		weapon
+			"blast radius" 550
+			"shield damage" 7400
+			"hull damage" 4200
+			"hit force" 12600
+	outfits
+		"Large Thrust Module" 3
+		"Large Steering Module" 3
+		"Small Steering Module" 3
+		"Small Repair Module" 2
+		"Quantum Keystone"
+		"Ion Cannon" 4
+		"Large Shield Module"
+		"Large Battery Module"
+		"Large Reactor Module"
+		"Liquid Nitrogen Cooler"
+		"Scram Drive"
+
+	engine -15 155 .8
+	engine 15 155 .8
+	gun 119 12 "Ion Cannon"
+	gun -119 12 "Ion Cannon"
+	gun 38 -138 "Ion Cannon"
+	gun -38 -138 "Ion Cannon"
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion large"
+	description "The O'Neill Class Asgard."
+
+ship "X-Wing"
+	sprite ship/x-wing-fighter
+	attributes
+		category Fighter
+		cost 90000
+		shields 1100
+		hull 700
+		fuel 100
+		crew 1
+		bunks 1
+		drag 0.7
+		"engine capacity" 30
+		"fuel capacity" 100
+		"gun ports" 2
+		"heat dissipation" 0.67
+		mass 30
+		"outfit space" 162
+		"required crew" 1
+		"weapon capacity" 64
+	outfits
+		Hyperdrive
+		"Hai Corundum Regenerator"
+		"Hai Chasm Batteries"
+		"Pebble Core"
+		"Particle Cannon" 2
+		"Small Heat Shunt"
+		"Type 1 Radiant Thruster"
+		"Type 1 Radiant Steering"
+
+	engine -20 28 0.3
+	engine 20 28 0.3
+	gun -9 -29 "Particle Cannon"
+	gun 9 -29 "Particle Cannon"
+	explode "tiny explosion" 15
+	explode "small explosion" 5
+	description `The X-wing came from a Galaxay Far away, and is equiped with a Proton Gun. Unlike other fighters, this 1 can make a jump to Hyperspace. Making it easy to escape, and collect your fighters in a new system.`
