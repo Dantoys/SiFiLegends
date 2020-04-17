@@ -1,0 +1,2 @@
+# SiFiLegends
+ EndlessSky Plugin
