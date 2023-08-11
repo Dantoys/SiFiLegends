@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: SiFiLegends
+Upstream-Contact: Dantoys <twstephens@gmail.com>
+Source: https://github.com/Dantoys/SiFiLegends
+
+Files: *
+Copyright: NONE
+
+Files:
+ icon*.png
+Copyright: @Dantoys
+License: GNU GENERAL PUBLIC LICENSE

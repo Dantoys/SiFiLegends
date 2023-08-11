@@ -1,4 +1,6 @@
-ship "Andromeda"
+# Plugin Created by Thomas Stephens aka 'Dantoys'
+
+ship "Glorious Heritage Class"
 	sprite "ship/andromeda"
 	attributes
 		category "Heavy Warship"
@@ -72,7 +74,111 @@ ship "Andromeda"
 	drone 66 85 right
 	drone 66 135 right
 	explode "nuke explosion"
-	description `War ship discovered in the Andromada Galaxy with Strange Origins.`
+	description `Galactic exploratory vessel Andromeda.`
+	
+ship Galactrian
+	sprite ship/galactrian
+	attributes
+		category "Heavy Warship"
+		cost 19400000
+		mass 1100
+		bunks 380
+		"cargo space" 650
+		drag 17.6
+		"engine capacity" 180
+		"fuel capacity" 800
+		"gun ports" 0
+		"heat dissipation" 0.3
+		hull 12000
+		"outfit space" 890
+		"required crew" 147
+		shields 23500
+		"turret mounts" 6
+		"weapon capacity" 395
+	outfits
+		"Mass Expansion" 5
+		"Jump Drive"
+		"Small Radar Jammer" 2
+		"Point Defense Turret"
+		"Forge-Class Thruster"
+		"Outfit Scanner"
+		"Cargo Scanner"
+		"Outfits Expansion" 2
+		"Small Steering Module"
+		"Luxury Accommodations"
+		"Cloaking Device"
+		"Systems Core (Large)"
+		"Fuel Processor" 2
+		"Cooling Ducts"
+		"Sidewinder Missile" 45
+		"Sidewinder Missile Launcher"
+		"Antimatter Core"
+		"Smelter-Class Thruster"
+		"Quantum Key Stone"
+		"Salvage Scanner"
+		"Smelter-Class Steering"
+		"Thunderhead Launcher"
+		"Thunderhead Missile" 60
+		"Thunderhead Storage Array"
+		"Bright Cloud Shielding"
+		Phaser 8
+
+	gun -15 -226 "Thunderhead Launcher"
+	gun 15 -226 "Sidewinder Missile Launcher"
+	turret -20.5 -345.5 Phaser
+	turret 68.5 -194.5 Phaser
+	turret -1 0 "Point Defense Turret"
+	turret -81.5 -71 Phaser
+	turret -39.5 125 Phaser
+	turret 68.5 128.5 Phaser
+	turret 152.5 249.5 Phaser
+	turret 67 279.5 Phaser
+	turret -85 353 Phaser
+
+	bay "fighter" 155 -44.5
+		"launch effect" "basic launch"
+	bay "fighter" -121 211
+		"launch effect" "basic launch"
+	engine 0 440
+		zoom 1
+		angle 0
+		under
+	engine -40 440
+		zoom 1
+		angle 0
+		under
+	engine 40 440
+		zoom 1
+		angle 0
+		under
+	"reverse engine" 30 -415
+		zoom 0.5
+		angle -360
+		under
+	"reverse engine" -30 -415
+		zoom 0.5
+		angle -360
+		under
+	"steering engine" -146 308
+		zoom 0.3
+		angle 90
+		under
+		left
+	"steering engine" 235 308
+		zoom 0.3
+		angle -90
+		under
+		right
+		
+	leak leak 30 50
+	leak flame 30 80
+	leak "big leak" 50 30
+	explode "small explosion" 25
+	explode "large explosion" 45
+	explode "medium explosion" 35
+	explode "huge explosion" 30
+	"final explode" "final explosion large" 1
+	description `An unexplained event merged several ships into a City-Ship to create this beast! Enjoy!`
 
 ship "Destiny"
 	sprite "ship/destiny"
@@ -94,7 +200,7 @@ ship "Destiny"
 		"outfit space" 1100
 		"turret mounts" 8
 		"weapon capacity" 580
-		"engine capacity" 220
+		"engine capacity" 240
 		weapon
 			"blast radius" 350
 			"shield damage" 1000
@@ -141,7 +247,7 @@ ship "Destiny"
 	fighter -10 85
 	fighter 10 85
 	explode "nuke explosion"
-	description `Ancient war ship discovered in the Andromada Galaxy with Strange Origins.`
+	description `Extra-galactic Ancient exploratory vessel launched from Earth several hundreds of thousands of years ago, prior to when many Ancients began to focus on ascension.`
 
 ship "1701"
 	sprite "ship/1701"
@@ -156,7 +262,7 @@ ship "1701"
 		"automaton" 0
 		"bunks" 410
 		"mass" 470
-		"drag" 12.
+		"drag" 10.5
 		"heat dissipation" 0.8
 		"fuel capacity" 800
 		"cargo space" 100
@@ -193,13 +299,13 @@ ship "1701"
 	turret -0.5 -107 "Phaser"
 
 	explode "nuke explosion"
-	description `Ancient war ship discovered in the Andromada Galaxy with Strange Origins.`
+	description `23rd Century Starship from Earth 42 Milkyway Galaxy.`
 
 ship "Millennium Falcon"
 	sprite "ship/millenniumfalcon"
 	attributes
 		category "Medium Warship"
-		"cost" 4900000
+		"cost" 2900000
 		"shields" 7400
 		"hull" 3100
 		"required crew" 4
@@ -253,7 +359,7 @@ ship "Sovereign"
 	sprite "ship/sovereign"
 	attributes
 		category "Heavy Warship"
-		"cost" 9600000
+		"cost" 5600000
 		"shields" 15100
 		"hull" 22200
 		
@@ -304,7 +410,7 @@ ship "Bird of Prey"
 	sprite "ship/klingon"
 	attributes
 		category "Medium Warship"
-		cost 12800000
+		cost 2800000
 		"shields" 9200
 		"hull" 5100
 		"required crew" 12
@@ -358,12 +464,12 @@ ship "Bird of Prey"
 	gun -74.5 4 "Korath Repeater"
 	gun 74.5 4 "Korath Repeater"
 	turret 0 -53 "Korath Repeater Turret"
-	turret 0 26  "Korath Warder"
+	turret 0 26  "Point Defense Turret"
 	explode "tiny explosion" 40
 	explode "small explosion" 20
 	explode "medium explosion" 10
 	"final explode" "final explosion small" 1
-	description "K'  what?  This ship came from an Empire that values battle, and while small, will strike fear into any who opposse the Bird of Prey. "
+	description "K'  what?  This stealthy ship came from an Empire that values battle, and while small, will strike fear into any who opposse the Bird of Prey. "
 
 ship "Galactica"
 	sprite "ship/galactica"
@@ -372,18 +478,17 @@ ship "Galactica"
 		"cost" 80000
 		"shields" 57000
 		"hull" 65000
-		"required crew" 290
-		"bunks" 520
+		"required crew" 210
+		"bunks" 690
 		"automaton" 0
-		"mass" 1550
-		"drag" 17.8
+		"mass" 920
+		"drag" 10
 		"heat dissipation" .5
-		"fuel capacity" 500
-		"cargo space" 187
-		"outfit space" 1054
-		"weapon capacity" 447
-		"engine capacity" 173
-		"ramscoop" 2
+		"fuel capacity" 800
+		"cargo space" 198
+		"outfit space" 1056
+		"weapon capacity" 452
+		"engine capacity" 160
 		"shield generation" 3
 		"shield energy" 2
 		weapon
@@ -392,23 +497,21 @@ ship "Galactica"
 			"hull damage" 4200
 			"hit force" 12600
 	outfits
-		"Javelin Pod" 4
-		"Javelin" 400
+		"Mass Expansion" 5
 		"Bombardment Turret" 8
+		"Type 3 Radiant Steering" 2
+		"Small Thrust Module"
+		"Type 3 Radiant Thruster" 2
+		"Small Steering Module"
+		"Jump Drive"
 		"Heavy Anti-Missile Turret" 2
-		
+		"Fuel Processor"
+		"Large Heat Shunt" 4
 		"Triple Plasma Core"
 		"Plasma Core"
 		"Systems Core (Large)"
-		"Large Heat Shunt" 4
-		"Active Cooling" 2
-		"Jump Drive"
-
-		"Large Thrust Module" 2
-		"Large Steering Module" 2
-		"Small Thrust Module"
-		"Small Steering Module"
-
+		"Javelin Pod" 4
+		Javelin 400
 	engine -82 446 .8
 	engine 82 446 .8
 	engine -60 447 .8
@@ -427,7 +530,18 @@ ship "Galactica"
 	gun -165 75 "Javelin Pod"
 	turret 0 -155 "Heavy Anti-Missile Turret"
 	turret 0 180 "Heavy Anti-Missile Turret"
-
+	fighter -130 150
+	fighter 130 150
+	fighter -130 90
+	fighter 130 90
+	fighter -130 30
+	fighter 130 30
+	fighter -130 -30
+	fighter 130 -30
+	fighter -130 -90
+	fighter 130 -90
+	fighter -130 -150
+	fighter 130 -150
 	explode "tiny explosion" 120
 	explode "small explosion" 60
 	explode "medium explosion" 70
@@ -440,7 +554,7 @@ ship "O'Neill Class Asgard"
 	sprite "ship/o_neill_class_asgard"
 	attributes
 		category "Heavy Warship"
-		"cost" 29550000
+		"cost" 11550000
 		"shields" 19000
 		"hull" 9000
 		"required crew" 52
@@ -486,39 +600,102 @@ ship "O'Neill Class Asgard"
 	"final explode" "final explosion large"
 	description "The O'Neill Class Asgard."
 
-ship "X-Wing"
+ship "Legendary Bounder"
+	sprite ship/mboundere
+	thumbnail thumbnail/mboundere
+	attributes
+		category Interceptor
+		cost 1250000
+		mass 145
+		bunks 18
+		"cargo space" 10
+		drag 3.8
+		"Cloaking Device"
+		"engine capacity" 95
+		"fuel capacity" 1000
+		"gun ports" 1
+		"heat dissipation" 0.8
+		hull 900
+		"outfit space" 260
+		"required crew" 2
+		"self destruct" 0.25
+		shields 2800
+		"turret mounts" 2
+		"weapon capacity" 70
+	outfits
+		"Bullfrog Anti-Missile" 2
+		"Enforcer Confrontation Gear" 10
+		"Forge-Class Steering"
+		"Forge-Class Thruster"
+		"Fuel Processor"
+		"Jump Drive"
+		"Meteor Missile" 45
+		"Meteor Missile Box"
+		"Meteor Missile Launcher"
+		"Quantum Key Stone"
+		"Small Heat Shunt" 2
+		"Small Reactor Module"
+		"Systems Core (Small)"
+	crew 2
+
+	engine -12 44
+		zoom 1
+		angle 0
+		under
+	engine 12 44
+		zoom 1
+		angle 0
+		under
+	gun 0 -85 "Meteor Missile Launcher"
+	turret -38 7 "Bullfrog Anti-Missile"
+	turret 38 7 "Bullfrog Anti-Missile"
+	explode "medium explosion" 15
+	explode "small explosion" 20
+	explode "tiny explosion" 10
+	"final explode" "final explosion small" 1
+
+ship X-Wing
 	sprite ship/x-wing-fighter
 	attributes
 		category Fighter
-		cost 90000
-		shields 1100
-		hull 700
-		fuel 100
+		cost 1545700
+		mass 35
+		bunks 2
 		crew 1
-		bunks 1
 		drag 0.7
 		"engine capacity" 30
-		"fuel capacity" 100
+		fuel 200
+		"fuel capacity" 200
 		"gun ports" 2
-		"heat dissipation" 0.67
-		mass 30
-		"outfit space" 162
+		"heat dissipation" 0.76
+		hull 850
+		"outfit space" 175
 		"required crew" 1
-		"weapon capacity" 64
+		shields 1900
+		"weapon capacity" 60
 	outfits
+		"Anvil-Class Engine"
+		"Emergency Ramscoop"
+		"Generator (Candle Class)"
 		Hyperdrive
-		"Hai Corundum Regenerator"
-		"Hai Chasm Batteries"
-		"Pebble Core"
 		"Particle Cannon" 2
+		"Quantum Key Stone"
+		"Small Biochemical Cell"
 		"Small Heat Shunt"
-		"Type 1 Radiant Thruster"
-		"Type 1 Radiant Steering"
+		"Small Repair Module"
+		"Small Shield Module"
 
-	engine -20 28 0.3
-	engine 20 28 0.3
+	engine -20 28
+		zoom 0.3
+		angle 0
+		under
+	engine 20 28
+		zoom 0.3
+		angle 0
+		under
 	gun -9 -29 "Particle Cannon"
 	gun 9 -29 "Particle Cannon"
-	explode "tiny explosion" 15
 	explode "small explosion" 5
+	explode "tiny explosion" 15
+
 	description `The X-wing came from a Galaxay Far away, and is equiped with a Proton Gun. Unlike other fighters, this 1 can make a jump to Hyperspace. Making it easy to escape, and collect your fighters in a new system.`

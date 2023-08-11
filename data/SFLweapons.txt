@@ -10,10 +10,10 @@
 
 outfit "Phaser"
 	category "Turrets"
-	cost 2159000
+	cost 2270000
 	thumbnail "outfit/phaser turret"
 	"mass" 40
-	"outfit space" -40
+	"outfit space" -36
 	"weapon capacity" -40
 	"turret mounts" -1
 	"required crew" 1
@@ -35,3 +35,31 @@ outfit "Phaser"
 		"ion damage" .1
 
 	description "Phaser for use on the Sovereign."
+
+outfit "Dual Phaser"
+	category "Turrets"
+	cost 3759000
+	thumbnail "outfit/phaser turret"
+	"mass" 60
+	"outfit space" -60
+	"weapon capacity" -60
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/phaser"
+		"hardpoint sprite" "hardpoint/phaser turret"
+		"hardpoint offset" 10
+		sound "skylance"
+		"hit effect" "beam laser impact"
+		"inaccuracy" .4
+		"velocity" 1000
+		"lifetime" 1
+		"reload" 1
+		"turret turn" 4
+		"firing energy" 8
+		"firing heat" 7
+		"shield damage" 6
+		"hull damage" 7
+		"ion damage" .2
+
+	description "Dual Mounted Phaser for an extra punch, power restrictions reduce performance."

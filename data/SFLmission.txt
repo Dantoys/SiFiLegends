@@ -1,0 +1,36 @@
+# Plugin Created by Thomas Stephens aka 'Dantoys'
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+#
+# Created by Thomas Stephens aka 'Dantoys' for use in Endless Sky.
+
+mission "Deep Space 6 Appears"
+	landing
+	invisible
+	description "Show SiFi Legends, Deep Space 6"
+	to offer
+		has "First Contact: Hai: offered"
+	on offer
+		event "SiFiLegends: Deep Space 6 Appears"
+
+mission "SiFi Legends Prime"
+	landing
+	invisible
+	description "The Stage has been set for SiFi Legends"
+	to offer
+		has "First Contact: Hai: offered"
+	on enter "Orbona"
+		dialog
+			`When you enter the system, your sensors pick up some strange astronomical phenomenon. It's not a wormhole, but after a bright flash, a station appears.`
+
+event "SiFiLegends: Deep Space 6 Appears"
+	system Orbona
+		add object "Deep Space 6"
+			sprite planet/ds6
+				scale 0.25
+			distance 2873
+			period 242
